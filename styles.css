@@ -538,6 +538,7 @@ a.btn:active,
   .left img {
     height: 40rem;
     max-width: 90%;
+    opacity: 0.9;
   }
 }
 
