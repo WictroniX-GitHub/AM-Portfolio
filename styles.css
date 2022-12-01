@@ -2,11 +2,11 @@
 
 :root {
   --customColor: #4fab4a;
-  --purple: #ce00ff;
+  --purple: #4fab4a;
   --blue: #4fab4a;
-  --orange: #ff4600;
+  --orange: #4fab4a;
   --cyan: #03ffc7;
-  --light: #33b3e6;
+  --light: #4fab4a;
 }
 
 
@@ -47,6 +47,7 @@ a {
 
 img {
   max-width: 100%;
+  opacity: 0.5;
 }
 
 li {
