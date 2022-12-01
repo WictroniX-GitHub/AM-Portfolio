@@ -123,10 +123,13 @@ new TypeIt("#type2", {
   loop: true,
   waitUntilVisible: true,
 })
-  .type("Designer", { delay: 400 })
+  .type("Manager", { delay: 400 })
   .pause(500)
   .delete(9)
-  .type("Developer", { delay: 400 })
+  .type("Mentor", { delay: 400 })
+  .pause(500)
+  .delete(9)
+  .type("Leader", { delay: 400 })
   .pause(500)
   .delete(9)
   .go();
