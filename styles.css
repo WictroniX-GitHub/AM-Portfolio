@@ -604,13 +604,7 @@ a.btn:active,
   font-weight: 500;
 }
 
-.skills-box .skills-ilt {
-  width: 100%;
-  position: relative;
-  height: .4rem;
-  background-color: #ccc;
-  border-radius: .5rem;
-}
+
 
 .skills-box .skills-bar {
   background-color: var(--customColor);
