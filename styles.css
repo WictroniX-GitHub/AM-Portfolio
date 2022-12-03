@@ -598,11 +598,6 @@ a.btn:active,
   margin-bottom: 2rem;
 }
 
-.skills-box h4 {
-  font-size: 1.8rem;
-  color: #888;
-  font-weight: 500;
-}
 
 
 
@@ -610,12 +605,6 @@ a.btn:active,
 
 
 
-.skills-box span {
-  position: absolute;
-  bottom: 10%;
-  right: 0;
-  font-size: 1.4rem;
-}
 
 .skills-center {
   display: grid;
