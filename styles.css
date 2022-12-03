@@ -593,7 +593,7 @@ a.btn:active,
   border-radius: 50%;
   border-style: groove;
 }
-.skills-left .container{
+.skills-left-container{
   display: flex;
 }
 .service:hover span {
