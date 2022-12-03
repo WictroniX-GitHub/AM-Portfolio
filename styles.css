@@ -606,36 +606,9 @@ a.btn:active,
 
 
 
-.skills-box .skills-bar {
-  background-color: var(--customColor);
-  height: .4rem;
-}
 
-.skills-box .html {
-  width: 95%;
-}
 
-.skills-box .nodejs {
-  width: 86%;
-}
 
-.skills-box .css {
-  width: 90%;
-}
-
-.skills-box .javascript {
-  width: 90%;
-}
-
-.skills-box .mongodb {
-  width: 95%;
-}
-.oval {
-  width: 160px;
-  height: 80px;
-  
-  border-radius: 50%;
-}
 
 .skills-box span {
   position: absolute;
