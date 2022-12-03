@@ -636,6 +636,12 @@ a.btn:active,
 .skills-box .mongodb {
   width: 95%;
 }
+.oval {
+  width: 160px;
+  height: 80px;
+  
+  border-radius: 50%;
+}
 
 .skills-box span {
   position: absolute;
