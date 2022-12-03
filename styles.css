@@ -586,8 +586,16 @@ a.btn:active,
 .service:hover {
   background-color: var(--customColor);
 }
-
-
+.oval {
+  width: 160px;
+  height: 80px;
+  background: #a84909;
+  border-radius: 50%;
+  border-style: groove;
+}
+.skills-left .container{
+  display: flex;
+}
 .service:hover span {
   color: #fff;
 }
