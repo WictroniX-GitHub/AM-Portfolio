@@ -36,14 +36,14 @@
       <nav class="nav">
         <div class="navigation container">
           <div class="logo">
-           
+            <span>&nbsp;</span>
+            <img src="images/logoAMFinal.png" alt="amlogo">
           </div>
-
           <div class="menu">
             <div class="top-nav">
-            <!--  <div class="logo"> -->
-                
-             <!-- </div> -->
+             <!-- <div class="logo">
+                <img src="images/logoAM.png" alt="">
+             </div> -->
 
               <div class="close">
                 <i class="fas fa-times"></i>
@@ -305,12 +305,40 @@ He is motivated and quick learner and has the ability to articulate information 
     <h1>Gallery</h1>
   </div>
 
-  <div class="services-center container">
+  <div class="glide__track" data-glide-el="track">
+
+  <!-- Glide carousel -->
+  <div class="glide" id="gallId" class="gallery">
+    <div class="glide__track" data-glide-el="track">
+      <div class="glide__slides">
+        <div class="glide_slide">
+          <img src="http://picsum.photos/500/400" alt="">
+        </div>
+        <div class="glide_slide">
+          <img src="http://picsum.photos/500/400" alt="">
+        </div>
+        <div class="glide_slide">
+          <img src="http://picsum.photos/500/400" alt="">
+        </div>
+        <div class="glide_slide">
+          <img src="http://picsum.photos/500/400" alt="">
+        </div>
+        <div class="glide_slide">
+          <img src="http://picsum.photos/500/400" alt="">
+        </div>
+        <div class="glide_slide">
+          <img src="http://picsum.photos/500/400" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="services-center container">
     <div class="service" data-aos="fade-right" data-aos-duration="1500">
       <span><i class="fab fa-accusoft"></i></span>
       <h2>Orientation</h2>
       <p>
-Dummy image here
+        Dummy image here
       </p>
     </div>
 
@@ -319,7 +347,6 @@ Dummy image here
       <h2>Talk</h2>
       <p>
         Dummy image here
-
       </p>
     </div>
     <div class="service" data-aos="fade-left" data-aos-duration="1500">
@@ -329,7 +356,7 @@ Dummy image here
         Dummy image here
       </p>
     </div>
-  </div>
+  </div> -->
 </section>
  <!-- Blog -->
  <section class="section blog" id="blog">
@@ -516,5 +543,25 @@ Dummy image here
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <!-- Custom Script -->
     <script src="index.js"></script>
+    <script defer>
+      new Glide("#gallId", {
+        type: "carousel",
+        startAt: 0,
+        perView: 3,
+        gap: 20,
+        hoverpause: true,
+        autoplay: 2000,
+        animationDuration: 800,
+        animationTimingFunc: "linear",
+        breakpoints: {
+          996: {
+            perView: 2,
+          },
+          768: {
+            perView: 1,
+          },
+        },
+      }).mount()
+    </script>
   </body>
 </html>
