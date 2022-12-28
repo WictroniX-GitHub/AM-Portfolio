@@ -414,7 +414,7 @@ li {
 
 .section {
   padding: 5rem 0 7rem 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .about {
@@ -599,27 +599,20 @@ a.btn:active,
   color: #888;
   font-weight: 500;
 }
-@keyframes skill-animate {
-  0% {background: linear-gradient(to right bottom,rgba(3, 255, 199, 0.5),rgba(0, 162, 237) 30% 70%,rgba(3, 255, 199, 0.5));
-    border-radius: 5%;
-    color: white;}
-  100% {background: linear-gradient(to right bottom,rgba(0, 162, 237),rgba(3, 255, 199, 0.5) 40% 60%,rgba(0, 162, 237));
-    border-radius: 20%;
-    color: var(--customColor);}
-}
 .skills-box .skills-ilt {
   width: 23rem;
   position: relative;
-  height: 15rem;
+  height: 6rem;
   text-align: center;
-  animation: skill-animate 5s ease-in-out infinite alternate;
-  transition: linear-gradient 500ms ease-in-out;
+  background: linear-gradient(to right bottom,rgba(3, 255, 199, 0.5),rgba(0, 162, 237) 30% 70%,rgba(3, 255, 199, 0.5));
+  border-radius: 5%;
+  color: white;
 }
 
 .skills-box .skills-ilt h2 {
   position: relative;
   font-size: 2.5rem;
-  top: 5rem;
+  top: 1rem;
 }
  .oval {
    width: 160px;
@@ -702,9 +695,8 @@ a.btn:active,
 
 /* Gallery */
 
-.gallery .glide_slide img {
-  height: 45rem !important;
-  width: auto;
+#services .glide *{
+  height: 40rem;
 }
 
 /* Blog */
