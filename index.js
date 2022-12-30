@@ -54,30 +54,7 @@ navClose.addEventListener("click", () => {
   }
 });
 
-// Colors
 
-const widget = document.querySelector(".widget");
-const control = document.querySelector(".control");
-
-widget.addEventListener("click", () => {
-  control.classList.toggle("open");
-});
-
-const colors = [...document.querySelectorAll(".colors span")];
-document.querySelector(":root").style.setProperty("--customColor", "#00a2ed");
-
-colors.forEach((color) => {
-  color.addEventListener("click", () => {
-    const currentColor = color.dataset.id;
-    document
-      .querySelector(":root")
-      .style.setProperty("--customColor", currentColor);
-  });
-});
-
-window.addEventListener("scroll", () => {
-  control.classList.remove("open");
-});
 
 // Glidejs
 
@@ -110,13 +87,13 @@ new TypeIt("#type1", {
   loop: true,
   waitUntilVisible: true,
 })
-  .type("Manager", { delay: 400 })
+  .type("a Manager", { delay: 400 })
   .pause(500)
   .delete(9)
-  .type("Mentor", { delay: 400 })
+  .type("a Mentor", { delay: 400 })
   .pause(500)
   .delete(9)
-  .type("Leader", { delay: 400 })
+  .type("a Leader", { delay: 400 })
   .pause(500)
   .delete(9)
   .go();
@@ -126,18 +103,18 @@ new TypeIt("#type2", {
   loop: true,
   waitUntilVisible: true,
 })
-  .type("Manager", { delay: 400 })
+  .type("a Manager", { delay: 400 })
   .pause(500)
   .delete(9)
-  .type("Mentor", { delay: 400 })
+  .type("a Mentor", { delay: 400 })
   .pause(500)
   .delete(9)
-  .type("Leader", { delay: 400 })
+  .type("a Leader", { delay: 400 })
   .pause(500)
   .delete(9)
   .go();
 
-gsap.from(".logo", { opacity: 0, duration: 1, delay: 0.5, y: -10 });
+gsap.from(".logo", { opacity: 1, duration: 1, delay: 0.5, y: -10 });
 gsap.from(".hamburger", { opacity: 0, duration: 1, delay: 0.8, x: 20 });
 gsap.from(".banner", { opacity: 0, duration: 1, delay: 1.1, x: -200 });
 gsap.from(".hero h3", { opacity: 0, duration: 1, delay: 1.4, y: -50 });
@@ -145,13 +122,6 @@ gsap.from(".hero h1", { opacity: 0, duration: 1, delay: 1.7, y: -45 });
 gsap.from(".hero h4", { opacity: 0, duration: 1, delay: 2.1, y: -30 });
 gsap.from(".hero a", { opacity: 0, duration: 1, delay: 2.4, y: -10 });
 
-gsap.from(".nav-item", {
-  opacity: 0,
-  duration: 1,
-  delay: 1,
-  y: 30,
-  stagger: 0.2,
-});
 
 gsap.from(".icons span", {
   opacity: 0,

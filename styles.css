@@ -73,7 +73,8 @@ li {
   opacity: 0.5;
 }
 .nav {
-  padding: 0.75rem 0
+  padding: 0.75rem 0;
+  transition: all 0.3s ease-in-out;
 }
 .nav.fix-nav {
   position: fixed;
@@ -90,6 +91,7 @@ li {
 .navigation {
   display: flex;
   align-items: center;
+  position: relative;
   justify-content: space-between;
 }
 /* .logo h1 {
@@ -865,7 +867,7 @@ border: 1px solid #ccc;
 
 
 footer{
-  background-color: #000;
+  background-color: var(--customColor);
   padding: 1rem;
   text-align: center; 
 }
@@ -874,6 +876,7 @@ footer p{
   color: white;
   position: relative;
   bottom: 1rem;
+  line-height: 4rem;
 }
 footer a {
   background: white;
@@ -890,4 +893,54 @@ footer p span{
   font-size: 2.5rem;
   font-weight: 900;
   font-variant: small-caps;
+}
+
+/* Blog-1 */
+
+.blogs {
+  margin: 0 1rem 0 1rem;
+  padding: 0 1rem 0 1rem;
+}
+.blogimg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blogimg img,
+.other-blog img {
+  height: 35rem;
+  width: 50rem;
+  border: 2px solid var(--customColor);
+}
+
+.blogimg span,
+.other-blog span {
+  color: var(--customColor);
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.blogcontent p{
+  margin-bottom: 1rem;
+}
+
+.other-blog {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.other-blog h3 {
+  color: black;
+  margin: 2rem 0;
+  font-weight: 900;
+}
+
+.other-blog div{
+  display: flex;
+  flex-direction: column;
 }
