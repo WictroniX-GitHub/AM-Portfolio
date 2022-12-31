@@ -595,6 +595,7 @@ a.btn:active,
 .skills-left {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .skills-box {
   margin-right: 3rem;
@@ -611,7 +612,6 @@ a.btn:active,
   height: 6rem;
   text-align: center;
   background: linear-gradient(to right bottom,rgba(3, 255, 199, 0.5),rgba(0, 162, 237) 30% 70%,rgba(3, 255, 199, 0.5));
-  border-radius: 50%;
   color: white;
 }
 
@@ -724,7 +724,7 @@ a.btn:active,
 
 
 .image-container img {
-  object-fit: cover;
+  object-fit: fill;
   height: 25rem;
 }
 
@@ -878,6 +878,11 @@ footer p{
   bottom: 1rem;
   line-height: 4rem;
 }
+@media only screen and (max-width: 560px){
+  footer p{
+    bottom: 0;
+  }
+}
 footer a {
   background: white;
   padding: 1.1rem;
@@ -887,12 +892,6 @@ footer a img {
   height: 5rem;
   position: relative;
   top: 2rem;
-}
-footer p span{
-  color: var(--customColor);
-  font-size: 2.5rem;
-  font-weight: 900;
-  font-variant: small-caps;
 }
 
 /* Blog-1 */
