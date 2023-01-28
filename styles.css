@@ -458,8 +458,8 @@ li {
 }
 
 .left img {
-  height: 40rem;
-  width: 90%;
+  height: 58rem;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -513,11 +513,6 @@ a.btn:active,
   a.btn {
     padding: .7rem 1.8rem;
   }
-
-  .left img {
-    height: 40rem;
-    max-width: 25rem;
-  }
 }
 
 
@@ -529,12 +524,6 @@ a.btn:active,
 
   .left {
     text-align: center;
-  }
-
-  .left img {
-    height: 40rem;
-    max-width: 90%;
-    opacity: 1;
   }
 }
 
