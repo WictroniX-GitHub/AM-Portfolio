@@ -876,6 +876,7 @@ border: 1px solid #ccc;
 .other-blog img {
   height: 35rem;
   width: 50rem;
+  margin: auto;
   border: 2px solid var(--customColor);
 }
 
@@ -900,11 +901,19 @@ border: 1px solid #ccc;
 
 .other-blog h3 {
   color: black;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  width: 85%;
+  word-break: break-word;
   font-weight: 900;
 }
 
 .other-blog div{
   display: flex;
   flex-direction: column;
+}
+
+.blogsol {
+  display: block;
+  width: 50%;
+  margin: 2rem auto;
 }
